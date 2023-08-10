@@ -5,11 +5,11 @@ module.exports = {
   afterUpdate(event) {
     const { result, params } = event;
 
-    // vercelWebhook && axios.default.post(vercelWebhook);
+    vercelWebhook && axios.default.post(vercelWebhook);
   },
   afterCreate(event) {
     const { result, params } = event;
 
-    // vercelWebhook && axios.default.post(vercelWebhook);
+    vercelWebhook && axios.default.post(vercelWebhook);
   },
 };
